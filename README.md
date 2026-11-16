@@ -169,8 +169,9 @@ npm run snapshots -- 01                                 # re-capture reference.p
 npm run lint && npm run format:check && npm run typecheck
 ```
 
-`reference.png` depends on the fonts and renderer that captured it. The Docker image pins
-both, so the graders give the same result anywhere:
+Screenshots depend on fonts and the renderer. The grader page serves its own font (Noto Sans,
+in `fonts/`, SIL OFL 1.1) instead of relying on system fonts, and the Docker image pins the
+browser build, so the same baselines pass on a Linux workstation and in the container:
 
 ```sh
 docker build -t ui-task-bench .
@@ -178,9 +179,8 @@ docker run --rm ui-task-bench                                        # npm run v
 docker run --rm -v "$PWD/my-attempt:/sub:ro" ui-task-bench npm run grade -- 01 /sub
 ```
 
-The checked-in `reference.png` files were captured on Linux; if the container renders text
-differently, run `npm run snapshots` inside it once and commit the result. CI
-(`.github/workflows/ci.yml`) runs lint, formatting, typecheck and `verify` in the same image.
+CI (`.github/workflows/ci.yml`) runs lint, formatting, typecheck and `verify` in the same
+image.
 
 In a real dataset `tests/`, `reference/` and `cheats/` would be withheld from the candidate;
 they sit side by side here so the whole pipeline can be read in one place.
