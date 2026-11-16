@@ -15,7 +15,7 @@ function printResult({ task, submission, criteria, passed }: GradeResult): void 
   const width = Math.max(...criteria.map((c) => c.id.length));
   for (const c of criteria) {
     console.log(`  ${c.passed ? 'PASS' : 'FAIL'}  ${c.id.padEnd(width)}  ${c.title}`);
-    if (!c.passed && c.detail) console.log(`        ${' '.repeat(width)}${c.detail}`);
+    if (!c.passed && c.detail) console.log(`${' '.repeat(width + 10)}${c.detail}`);
   }
   const count = criteria.filter((c) => c.passed).length;
   console.log(`\n${passed ? 'PASS' : 'FAIL'}  ${count}/${criteria.length} criteria\n`);
