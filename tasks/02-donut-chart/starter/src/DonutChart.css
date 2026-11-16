@@ -1,0 +1,22 @@
+.donut-page {
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --highlight: #eef2ff;
+
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 48px 24px;
+  background: #f5f6f8;
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+
+.donut-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+}
