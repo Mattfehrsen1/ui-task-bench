@@ -1,0 +1,146 @@
+.donut-page {
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --highlight: #eef2ff;
+
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 48px 24px;
+  background: #f5f6f8;
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+
+.donut-page *,
+.donut-page *::before,
+.donut-page *::after {
+  box-sizing: inherit;
+}
+
+.donut-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.donut-card h2 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.donut-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (min-width: 640px) {
+  .donut-body {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.donut-chart {
+  position: relative;
+  flex: none;
+  width: min(280px, 100%);
+}
+
+.donut-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.donut-segment {
+  stroke: #fff;
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: opacity 120ms ease;
+}
+
+.donut-segment.is-dimmed {
+  opacity: 0.35;
+}
+
+.donut-segment:focus {
+  outline: none;
+}
+
+.donut-segment:focus-visible {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+
+.donut-total-label {
+  fill: var(--muted);
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.donut-total-value {
+  fill: var(--ink);
+  font-size: 22px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.donut-tooltip {
+  position: absolute;
+  display: grid;
+  gap: 2px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 13px;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 12px));
+}
+
+.donut-legend {
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.donut-legend li {
+  display: grid;
+  grid-template-columns: 12px 1fr auto 48px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.donut-legend li[aria-current='true'] {
+  background: var(--highlight);
+}
+
+.donut-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.donut-legend-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.donut-legend-percent {
+  color: var(--muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
