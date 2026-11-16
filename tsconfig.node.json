@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "erasableSyntaxOnly": true,
+    "paths": {}
+  },
+  "include": ["grade", "tasks/*/tests/*.ts", "*.config.ts", "eslint.config.js"]
+}

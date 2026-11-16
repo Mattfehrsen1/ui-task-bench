@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "paths": {
+      "@submission/PricingCards": ["./tasks/01-pricing-cards/reference/src/PricingCards.tsx"],
+      "@submission/DonutChart": ["./tasks/02-donut-chart/reference/src/DonutChart.tsx"],
+      "@submission/DataTable": ["./tasks/03-data-table/reference/src/DataTable.tsx"]
+    }
+  },
+  "include": [
+    "tasks/*/starter/src",
+    "tasks/*/reference/src",
+    "tasks/*/cheats/*/src",
+    "tasks/*/tests/harness",
+    "tasks/*/tests/contract.ts",
+    "tasks/*/tests/fixtures.ts"
+  ]
+}
