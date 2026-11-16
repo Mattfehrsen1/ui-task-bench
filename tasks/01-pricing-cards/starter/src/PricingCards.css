@@ -1,0 +1,20 @@
+.pricing {
+  --accent: #4f46e5;
+  --accent-soft: #eef2ff;
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 56px 24px;
+  background: #f5f6f8;
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+
+.pricing__header {
+  max-width: 1040px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
