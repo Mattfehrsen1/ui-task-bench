@@ -1,0 +1,18 @@
+/* Noto Sans, served with the page so text renders identically on every machine. */
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  src: url('./NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  src: url('./NotoSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  src: url('./NotoSans-Bold.ttf') format('truetype');
+}

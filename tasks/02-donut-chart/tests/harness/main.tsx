@@ -1,3 +1,4 @@
+import '../../../../fonts/fonts.css';
 import { createRoot } from 'react-dom/client';
 import DonutChart from '@submission/DonutChart';
 import type { DonutChartProps } from '../contract.ts';

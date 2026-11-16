@@ -10,7 +10,7 @@
   padding: 56px 24px;
   background: #f5f6f8;
   color: var(--ink);
-  font-family: system-ui, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .pricing *,

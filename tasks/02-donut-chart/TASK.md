@@ -68,14 +68,14 @@ below it. The chart is 280px wide with a 40px gap to the legend; segments have a
 separator (in the 200-unit viewBox). "Total" is 12px muted `#6b7280`, the sum 22px bold.
 Legend rows are 14px with 10px × 12px padding, a 12px swatch with 3px radius, and
 right-aligned values and muted percentages; the highlighted row background is `#eef2ff`.
-Tooltip: `#111827` background, white 13px text, 8px radius. Font: `system-ui, sans-serif`.
+Tooltip: `#111827` background, white 13px text, 8px radius. Font: Noto Sans, which the page loads in weights 400, 600 and 700 (`font-family: 'Noto Sans', sans-serif`).
 
 ## Constraints
 
 - React and TypeScript (strict), drawn with SVG. No dependencies beyond `react` and
   `react-dom`; the grader rejects any other import, and any import from outside your
   submission directory.
-- The component imports its own CSS. The grader page provides only `body { margin: 0 }`.
+- The component imports its own CSS. The grader page provides only `body { margin: 0 }` and the Noto Sans font faces.
 - Keep `src/types.ts` as given; the grader typechecks your component against it.
 
 ## Out of scope

@@ -83,15 +83,15 @@ filter box is 260×36px with an 8px radius; the status line is 13px muted `#6b72
 container has a 1px border and 10px radius. Header row 44px, `#f9fafb`, 12px uppercase muted
 semibold with 0.04em letter spacing, with a two-triangle sort icon; body rows 52px, 14px, cells
 padded 16px horizontally, 1px row dividers. Account names are semibold; numeric columns are
-right-aligned with tabular figures. Positive growth `#15803d`, negative `#b91c1c`. Font:
-`system-ui, sans-serif`.
+right-aligned with tabular figures. Positive growth `#15803d`, negative `#b91c1c`. Font: Noto Sans, which the page loads in weights 400, 600 and 700
+(`font-family: 'Noto Sans', sans-serif`).
 
 ## Constraints
 
 - React and TypeScript (strict); sparklines use the Canvas 2D API. No dependencies beyond
   `react` and `react-dom`; the grader rejects any other import, and any import from outside
   your submission directory.
-- The component imports its own CSS. The grader page provides only `body { margin: 0 }`.
+- The component imports its own CSS. The grader page provides only `body { margin: 0 }` and the Noto Sans font faces.
 - Keep `src/types.ts` as given; the grader typechecks your component against it.
 
 ## Out of scope

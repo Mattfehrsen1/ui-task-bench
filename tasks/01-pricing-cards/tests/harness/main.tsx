@@ -1,3 +1,4 @@
+import '../../../../fonts/fonts.css';
 import { createRoot } from 'react-dom/client';
 import PricingCards from '@submission/PricingCards';
 import type { Plan } from '../contract.ts';

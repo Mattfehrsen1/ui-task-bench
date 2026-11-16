@@ -1,3 +1,4 @@
+import '../../../../fonts/fonts.css';
 import { createRoot } from 'react-dom/client';
 import DataTable from '@submission/DataTable';
 import type { Account } from '../contract.ts';

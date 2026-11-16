@@ -62,13 +62,13 @@ Design tokens from the mockup: page background `#f5f6f8`, 56px top padding, cont
 padding; the highlighted card has a 2px `#4f46e5` border and a pill label overlapping its top
 edge (`#eef2ff` on `#4338ca`, 12px semibold). Title 32px bold, plan name 20px semibold, price
 44px bold, muted text `#6b7280`. The switch is 44×24px, grey `#d1d5db` when off and `#4f46e5`
-when on. The badge is `#dcfce7` on `#166534`. Font: `system-ui, sans-serif`.
+when on. The badge is `#dcfce7` on `#166534`. Font: Noto Sans, which the page loads in weights 400, 600 and 700 (`font-family: 'Noto Sans', sans-serif`).
 
 ## Constraints
 
 - React and TypeScript (strict). No dependencies beyond `react` and `react-dom`; the grader
   rejects any other import, and any import from outside your submission directory.
-- The component imports its own CSS. The grader page provides only `body { margin: 0 }`.
+- The component imports its own CSS. The grader page provides only `body { margin: 0 }` and the Noto Sans font faces.
 - Keep `src/types.ts` as given; the grader typechecks your component against it.
 
 ## Out of scope
